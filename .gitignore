@@ -59,3 +59,7 @@ config_local.py
 *.tmp
 *.bak
 *.swp
+
+# Ignorar ficheiros de metadados do macOS
+._*
+.DS_Store
