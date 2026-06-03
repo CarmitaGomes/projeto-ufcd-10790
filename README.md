@@ -1,8 +1,7 @@
-# Nome do Projeto
+# Period Tracker
 
-> Breve descrição do projeto numa ou duas frases. O que faz a aplicação? Para quem?
 
-**Exemplo:** *Sistema de gestão de uma biblioteca pessoal que permite registar livros, autores e empréstimos.*
+Aplicação de tracking do período menstrual que ajuda a acompanhar de perto a saúde da mulher. 
 
 ---
 
@@ -11,11 +10,11 @@
 | Campo            | Detalhe                              |
 |------------------|--------------------------------------|
 | **Curso**        | UFCD 10790 – Projeto de Programação  |
-| **Formando**     | [O teu nome completo]                |
-| **Formador**     | [Nome do formador]                   |
-| **Instituição**  | [Nome da instituição / empresa]      |
-| **Data de início** | [dd/mm/aaaa]                       |
-| **Data de entrega** | [dd/mm/aaaa]                      |
+| **Formando**     | Carmen Gomes                         |
+| **Formador**     | Carlos Barata                        |
+| **Instituição**  | IEFP                                 |
+| **Data de início** | 03/06/2026                         |
+| **Data de entrega** | 19/06/2026                        |
 | **Versão**       | 1.0                                  |
 
 ---
@@ -36,11 +35,16 @@
 
 ## Descrição
 
-Explica aqui o projeto com um pouco mais de detalhe do que na frase de abertura.
+Uma aplicação de consola em Python que funciona como um rastreador menstrual simplificado para um ciclo de 28 dias. O programa recolhe registos diários de sintomas e, a cada 7 dias, gera um resumo sobre a fase atual do ciclo. No final dos 28 dias, faz um diagnóstico e emite alertas caso detetar sintomas fora do padrão (como a falta de período).
 
 - Qual o problema que resolve?
+A app resolve a falta de perceção das mulheres sobre como as flutuações hormonais afetam o corpo (sintomas como acne ou cólicas) educando a utilizadora sobre os seus sintomas e sugerindo especialistas médicos de forma direta e localizada, sendo o seu diferencial das aplicações comuns.
+
 - Quem são os utilizadores?
-- Qual a abordagem técnica (ex: aplicação de consola em Python com base de dados SQLite)?
+Mulheres que procuram uma ferramenta direta, simples e educativa para monitorizar a sua saúde hormonal.
+
+- Qual a abordagem técnica?
+Aplicação executada no terminal do VS Code, desenvolvida em Python. O armazenamento dos dados e da lista de médicos é feito localmente através de ficheiros JSON, simulando uma base de dados. A interface utiliza cores ANSI (como vermelho para alertas e verde para sugestões) para facilitar a leitura.
 
 ---
 
@@ -199,7 +203,7 @@ O diagrama completo está em [`assets/diagrama_arquitetura.png`](assets/diagrama
 
 ```
 Sessão 1 — Requisitos        ✅ Concluído
-Sessão 2 — Arquitetura       ✅ Concluído
+Sessão 2 — Arquitetura       🔄 Em curso
 Sessão 3 — Desenvolvimento 1 🔄 Em curso
 Sessão 4 — Desenvolvimento 2 ⏳ Pendente
 Sessão 5 — Apresentação      ⏳ Pendente
