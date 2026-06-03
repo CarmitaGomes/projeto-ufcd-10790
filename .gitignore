@@ -61,5 +61,5 @@ config_local.py
 *.swp
 
 # Ignorar ficheiros de metadados do macOS
-._*
+**/._*
 .DS_Store
