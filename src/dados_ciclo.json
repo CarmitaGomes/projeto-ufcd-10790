@@ -1,8 +1,8 @@
 {
-    "perfil": {
-        "nome": "Carmen",
-        "idade": 23,
-        "ultima_menstruacao": "11-06-2026"
-    },
-    "registos ciclos": []
+  "perfil": {
+    "nome": "Carmen",
+    "idade": 23,
+    "ultima_menstruacao": "2026-06-11"
+  },
+  "registos ciclos": []
 }

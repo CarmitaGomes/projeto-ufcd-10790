@@ -1,7 +1,9 @@
 import json
 from pathlib import Path
 
-FICHEIRO_DADOS = "dados_ciclo.json"
+PASTA_SRC = Path(__file__).resolve().parent
+
+FICHEIRO_DADOS = PASTA_SRC / "dados_ciclo.json"
 
 
 def carregar_dados():
