@@ -14,6 +14,52 @@
         "Cansaço",
         "Dores de cabeça"
       ]
+    },
+    {
+      "dia_ciclo": 2,
+      "fase": "Menstruação",
+      "fluxo": "Pesado",
+      "colicas": "Pesadas",
+      "sintomas_adicionais": [
+        "Vómitos",
+        "Dores de cabeça"
+      ]
+    },
+    {
+      "dia_ciclo": 3,
+      "fase": "Menstruação",
+      "fluxo": "Médio",
+      "colicas": "Ligeiras",
+      "sintomas_adicionais": [
+        "Cansaço",
+        "Insónia"
+      ]
+    },
+    {
+      "dia_ciclo": 4,
+      "fase": "Menstruação",
+      "fluxo": "Ligeiro",
+      "colicas": "Ligeiras",
+      "sintomas_adicionais": [
+        "Cansaço"
+      ]
+    },
+    {
+      "dia_ciclo": 5,
+      "fase": "Fase Folicular",
+      "energia": "Baixo",
+      "sintomas_adicionais": [
+        "Mudanças de Humor",
+        "Retenção de Líquidos"
+      ]
+    },
+    {
+      "dia_ciclo": 6,
+      "fase": "Fase Folicular",
+      "energia": "Moderado",
+      "sintomas_adicionais": [
+        "Sensibilidade Mamária"
+      ]
     }
   ]
 }

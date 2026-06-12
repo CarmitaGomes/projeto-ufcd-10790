@@ -33,26 +33,23 @@ def recolher_dia_menstruacao(numero_dia):
     print("Se a tua menstruação terminou hoje, digite [F] para Finalizar esta fase.")
 
     # 1. Captura da Intensidade do Fluxo
+    ## retirar a opção F, já não será necessária
     print("1 - Intensidade do Fluxo:")
-    print("    [P] Pesado | [M] Médio | [L] Ligeiro | [F] Terminar Fase: ")
-    fluxo_input = input("Escolha a opção (P/M/L ou F): ").strip().upper()
-
-    if fluxo_input == "F":
-        return "FIM_FLUXO"
-    
-    
+    print("    [P] Pesado | [M] Médio | [L] Ligeiro ")
+    fluxo_input = input("Escolha a opção (P/M/L): ").strip().upper()
     
     # Validação segura com .get()
     fluxo_map = {"P": "Pesado", "M": "Médio", "L": "Ligeiro"}
     fluxo = fluxo_map.get(fluxo_input, "Médio")
     
     # 2. Captura da Intensidade das Cólicas
+    ## colocar opção para escolher ou não registar cólicas
     print("\n2 - Intensidade das Cólicas:")
-    print("    [P] Pesadas | [M] Medianas | [L] Ligeiras")
-    colicas_input = input("Escolha a opção (P/M/L): ").strip().upper()
+    print("    [P] Pesadas | [M] Medianas | [L] Ligeiras | [N] Nenhuma")
+    colicas_input = input("Escolha a opção (P/M/L/N): ").strip().upper()
     
-    colicas_map = {"P": "Pesadas", "M": "Medianas", "L": "Ligeiras"}
-    colicas = colicas_map.get(colicas_input, "Ligeiras")
+    colicas_map = {"P": "Pesadas", "M": "Medianas", "L": "Ligeiras", "N": "Nenhuma"}
+    colicas = colicas_map.get(colicas_input, "Nenhuma")
     
     # 3. Captura de Sintomas Adicionais (Uso de loop while com flag de saída)
     sintomas_adicionais = []
