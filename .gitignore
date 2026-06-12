@@ -63,3 +63,4 @@ config_local.py
 # Ignorar ficheiros de metadados do macOS
 **/._*
 .DS_Store
+src/._main.py
