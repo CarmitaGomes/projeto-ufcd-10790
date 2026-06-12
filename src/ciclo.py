@@ -2,6 +2,27 @@
 Módulo responsável por gerir a recolha de dados diários 
 e simular a passagem dos 28 dias do ciclo menstrual.
 """
+from datetime import datetime
+
+def calcular_fase_teorica(data_ultima_str):
+    """
+    Com base na data da última menstruação fornecida no perfil,
+    calcula teoricamente em que dia do ciclo (1 a 28) a utilizadora está hoje.
+    """
+    try:
+        # Converte o texto guardado no JSON para um objeto de data real do Python
+        data_ultima = datetime.strptime(data_ultima_str, "%Y-%m-%d")
+        data_atual = datetime.now()
+        
+        # Calcula a diferença absoluta em dias
+        diferenca_dias = (data_atual - data_ultima).days
+        
+        # O ciclo reinicia a cada 28 dias. O operador % descobre o dia atual (1-28)
+        dia_ciclo = (diferenca_dias % 28) + 1
+        return dia_ciclo
+    except Exception:
+        # Caso ocorra algum erro de digitação de datas, assume o dia 1 
+        return 1
 
 def recolher_dia_menstruacao(numero_dia):
     """
@@ -9,11 +30,17 @@ def recolher_dia_menstruacao(numero_dia):
     específicos de um dia da Fase de Menstruação (Semana 1).
     """
     print(f"\n--- REGISTO DO DIA {numero_dia} (Fase de Menstruação) ---")
-    
+    print("Se a tua menstruação terminou hoje, digite [F] para Finalizar esta fase.")
+
     # 1. Captura da Intensidade do Fluxo
     print("1 - Intensidade do Fluxo:")
-    print("    [P] Pesado | [M] Médio | [L] Ligeiro")
-    fluxo_input = input("Escolha a opção (P/M/L): ").strip().upper()
+    print("    [P] Pesado | [M] Médio | [L] Ligeiro | [F] Terminar Fase: ")
+    fluxo_input = input("Escolha a opção (P/M/L ou F): ").strip().upper()
+
+    if fluxo_input == "F":
+        return "FIM_FLUXO"
+    
+    
     
     # Validação segura com .get()
     fluxo_map = {"P": "Pesado", "M": "Médio", "L": "Ligeiro"}
