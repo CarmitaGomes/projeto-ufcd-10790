@@ -29,44 +29,42 @@
       "dia_ciclo": 3,
       "fase": "Menstruação",
       "fluxo": "Pesado",
-      "colicas": "Medianas",
+      "colicas": "Pesadas",
       "sintomas_adicionais": [
-        "Cansaço",
-        "Dores de cabeça"
+        "Vómitos"
       ]
     },
     {
       "dia_ciclo": 4,
       "fase": "Menstruação",
-      "fluxo": "Médio",
-      "colicas": "Nenhuma",
+      "fluxo": "Pesado",
+      "colicas": "Pesadas",
       "sintomas_adicionais": [
-        "Cansaço"
+        "Vómitos"
       ]
     },
     {
       "dia_ciclo": 5,
       "fase": "Menstruação",
-      "fluxo": "Médio",
-      "colicas": "Nenhuma",
-      "sintomas_adicionais": []
+      "fluxo": "Pesado",
+      "colicas": "Pesadas",
+      "sintomas_adicionais": [
+        "Vómitos"
+      ]
     },
     {
       "dia_ciclo": 6,
-      "fase": "Fase Folicular",
-      "energia": "Baixo",
-      "sintomas_adicionais": [
-        "Mudanças de Humor"
-      ]
+      "fase": "Menstruação",
+      "fluxo": "Pesado",
+      "colicas": "Pesadas",
+      "sintomas_adicionais": []
     },
     {
       "dia_ciclo": 7,
-      "fase": "Fase Folicular",
-      "energia": "Baixo",
-      "sintomas_adicionais": [
-        "Mudanças de Humor",
-        "Sensibilidade Mamária"
-      ]
+      "fase": "Menstruação",
+      "fluxo": "Pesado",
+      "colicas": "Pesadas",
+      "sintomas_adicionais": []
     }
   ]
 }

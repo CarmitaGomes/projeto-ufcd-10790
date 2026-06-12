@@ -2,6 +2,7 @@
 #
 from src.ler_gravar import carregar_dados, guardar_dados
 from src.ciclo import recolher_dia_menstruacao, recolher_dia_geral
+from src.saude import analisar_saude_ciclo
 
 def inicializar_perfil(dados):
     if dados["perfil"]["nome"] == "":
@@ -35,9 +36,10 @@ def gerir_fluxo_diario(dados):
         print(f"       REGISTO DIÁRIO - DIA {dia_atual} DO CICLO       ")
         print("=========================================")
         print("1. Registar sintomas do dia de hoje")
-        print("2. Sair do programa")
+        print("2. Ver Relatório de Saúde e Alertas") 
+        print("3. Sair do programa")
 
-        opcao = input("Escolha uma opção (1/2): ").strip()
+        opcao = input("Escolha uma opção (1/2/3): ").strip()
 
         if opcao == "1":
             esta_menstruada = "N"
@@ -68,10 +70,13 @@ def gerir_fluxo_diario(dados):
             print(f"\n[Boa] Dados do Dia {dia_atual} adicionados ao histórico!")
 
         elif opcao == "2":
+            analisar_saude_ciclo(dados)
+
+        elif opcao == "3":
             print("\nA fechar aplicação...")
             break
         else:
-            print("\nOpção inválida! selecione 1 ou 2.")
+            print("\nOpção inválida! selecione 1,2 ou 3.")
 
 
 
