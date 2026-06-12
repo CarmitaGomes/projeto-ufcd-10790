@@ -28,36 +28,43 @@
     {
       "dia_ciclo": 3,
       "fase": "Menstruação",
-      "fluxo": "Médio",
-      "colicas": "Ligeiras",
+      "fluxo": "Pesado",
+      "colicas": "Medianas",
       "sintomas_adicionais": [
         "Cansaço",
-        "Insónia"
+        "Dores de cabeça"
       ]
     },
     {
       "dia_ciclo": 4,
       "fase": "Menstruação",
-      "fluxo": "Ligeiro",
-      "colicas": "Ligeiras",
+      "fluxo": "Médio",
+      "colicas": "Nenhuma",
       "sintomas_adicionais": [
         "Cansaço"
       ]
     },
     {
       "dia_ciclo": 5,
-      "fase": "Fase Folicular",
-      "energia": "Baixo",
-      "sintomas_adicionais": [
-        "Mudanças de Humor",
-        "Retenção de Líquidos"
-      ]
+      "fase": "Menstruação",
+      "fluxo": "Médio",
+      "colicas": "Nenhuma",
+      "sintomas_adicionais": []
     },
     {
       "dia_ciclo": 6,
       "fase": "Fase Folicular",
-      "energia": "Moderado",
+      "energia": "Baixo",
       "sintomas_adicionais": [
+        "Mudanças de Humor"
+      ]
+    },
+    {
+      "dia_ciclo": 7,
+      "fase": "Fase Folicular",
+      "energia": "Baixo",
+      "sintomas_adicionais": [
+        "Mudanças de Humor",
         "Sensibilidade Mamária"
       ]
     }

@@ -28,6 +28,7 @@ def inicializar_perfil(dados):
 def gerir_fluxo_diario(dados):
 
     while True:
+        historico = dados["registos_ciclo"]
         dia_atual = len(dados["registos_ciclo"]) + 1
 
         print("\n=========================================")
@@ -39,8 +40,19 @@ def gerir_fluxo_diario(dados):
         opcao = input("Escolha uma opção (1/2): ").strip()
 
         if opcao == "1":
-            print(f"\nNo dia {dia_atual} do teu ciclo, estás menstruada?")
-            esta_menstruada = input("Responda (S) para Sim ou (N) para Não: ").strip().upper()
+            esta_menstruada = "N"
+            if dia_atual == 1:
+                print(f"\nNo dia {dia_atual} do teu ciclo, estás menstruada?")
+                esta_menstruada = input("Responda (S) para Sim ou (N) para Não: ").strip().upper()
+
+            else:
+                ultimo_registo = historico[-1]  
+
+                if ultimo_registo.get("fase") == "Menstruação":
+                    print(f"\nNo dia {dia_atual} do teu ciclo, ainda estás menstruada?")
+                    esta_menstruada = input("Responda (S) para Sim ou (N) para Não: ").strip().upper()
+                else:
+                    esta_menstruada = "N"
 
             if esta_menstruada == "S":
                 resposta_dia = recolher_dia_menstruacao(dia_atual)
