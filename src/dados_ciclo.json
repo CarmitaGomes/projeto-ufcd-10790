@@ -4,5 +4,16 @@
     "idade": 23,
     "ultima_menstruacao": "2026-06-12"
   },
-  "registos_ciclo": []
+  "registos_ciclo": [
+    {
+      "dia_ciclo": 1,
+      "fase": "Menstruação",
+      "fluxo": "Médio",
+      "colicas": "Medianas",
+      "sintomas_adicionais": [
+        "Cansaço",
+        "Dores de cabeça"
+      ]
+    }
+  ]
 }
