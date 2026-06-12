@@ -13,12 +13,12 @@ def inicializar_perfil(dados):
         print("Introduzir data no formato AAAA-MM-DD")
         ultima_mes = input("Data da ultima menstruação: ").strip()
 
-        dados["perfil"]["nome"] == nome
-        dados["perfil"]["idade"] == idade
-        dados["perfil"]["ultima_menstruacao"] == ultima_mes
+        dados["perfil"]["nome"] = nome
+        dados["perfil"]["idade"] = idade
+        dados["perfil"]["ultima_menstruacao"] = ultima_mes
 
         guardar_dados(dados)
-        print("\n[Boa] Perfil gravado no ciclo_dados.json!")
+        print("\n[Boa] Perfil gravado no dados_ciclo.json!")
     else:
         print(f"\nOlá outra vez, {dados['perfil']['nome']}!")
     
@@ -29,7 +29,7 @@ def inicializar_perfil(dados):
 def main():
     print("=== PERIOD TRACKER ===")
     dados = carregar_dados()
-    dados = inicializar_perfil()
+    dados = inicializar_perfil(dados)
     # Você pode adicionar mais funcionalidades aqui
 
 
