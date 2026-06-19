@@ -4,6 +4,7 @@ from pathlib import Path
 PASTA_SRC = Path(__file__).resolve().parent
 
 FICHEIRO_DADOS = PASTA_SRC / "dados_ciclo.json"
+FICHEIRO_MEDICOS = PASTA_SRC / "medicos.json"
 
 
 def carregar_dados():
@@ -27,3 +28,12 @@ def guardar_dados(dados_atualizados):
     """
     with open(FICHEIRO_DADOS, "w", encoding="utf-8") as f:
         json.dump(dados_atualizados, f, indent=2, ensure_ascii=False)
+
+        
+
+
+def carregar_medicos():
+    if not FICHEIRO_MEDICOS.exists():
+        return {}
+    with open(FICHEIRO_MEDICOS, "r", encoding="utf-8") as f:
+        return json.load(f)

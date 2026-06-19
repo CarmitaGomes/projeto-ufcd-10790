@@ -1,0 +1,20 @@
+{
+  "Lisboa": {
+    "Ginecologia": [
+      {"nome": "Dra. Maria Silva", "contacto": "210 000 000", "clinica": "Hospital da Luz Lisboa"},
+      {"nome": "Dr. Carlos Santos", "contacto": "217 000 000", "clinica": "Clínica CUF Alvalade"}
+    ],
+    "Clínica Geral": [
+      {"nome": "Dra. Ana Rita", "contacto": "213 000 000", "clinica": "Centro de Saúde de Alfama"}
+    ]
+  },
+  "Porto": {
+    "Ginecologia": [
+      {"nome": "Dra. Francisca Rocha", "contacto": "220 000 000", "clinica": "Hospital de São João"},
+      {"nome": "Dr. Ricardo Jorge", "contacto": "225 000 000", "clinica": "Hospital CUF Porto"}
+    ],
+    "Clínica Geral": [
+      {"nome": "Dr. Manuel Antunes", "contacto": "226 000 000", "clinica": "Centro de Saúde da Foz"}
+    ]
+  }
+}
