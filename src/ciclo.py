@@ -30,6 +30,7 @@ def recolher_dia_menstruacao(numero_dia):
     específicos de um dia da Fase de Menstruação (Semana 1).
     """
     print(f"\n--- REGISTO DO DIA {numero_dia} (Fase de Menstruação) ---")
+    print(f"\033[94m[Info Fase] A Menstruação marca o início do teu ciclo. O revestimento do útero está a descair, o que pode causar variações de energia e cólicas à medida que o corpo limpa e se renova.\033[0m")
     print("Se a tua menstruação terminou hoje, digite [F] para Finalizar esta fase.")
 
     # 1. Captura da Intensidade do Fluxo
@@ -88,6 +89,15 @@ def recolher_dia_geral(numero_dia, nome_fase):
     onde o fluxo menstrual já não está presente.
     """
     print(f"\n--- REGISTO DO DIA {numero_dia} ({nome_fase}) ---")
+
+    introducoes = {
+        "Fase Folicular": "Os teus níveis de estrogénio começam a subir. É normal sentires um aumento gradual de energia, foco e boa disposição física.",
+        "Ovulação": "É o pico de fertilidade do teu ciclo. Os níveis hormonais estão no máximo, o que pode aumentar a tua energia e alterar discretamente a sensibilidade corporal.",
+        "Fase Lútea": "O teu corpo prepara-se para um novo ciclo. A progesterona domina, o que pode trazer sintomas de retenção de líquidos, acne ou flutuações de humor."
+    }
+
+    frase_fase = introducoes.get(nome_fase, "Fase de transição e monitorização hormonal.")
+    print(f"\033[94m[Info Fase] {frase_fase}\033[0m")
     
     # Para as outras fases, monitorizamos os níveis de energia e humor
     print("1 - Nível de Energia Geral:")

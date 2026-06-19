@@ -66,6 +66,12 @@
       "fluxo": "Pesado",
       "colicas": "Pesadas",
       "sintomas_adicionais": []
+    },
+    {
+      "dia_ciclo": 8,
+      "fase": "Fase Folicular",
+      "energia": "Baixo",
+      "sintomas_adicionais": []
     }
   ]
 }
